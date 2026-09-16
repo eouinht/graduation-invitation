@@ -16,7 +16,18 @@ fetch("guests.json")
     );
 
     if (guest) {
-        guestElement.innerHTML = guest.name;
+
+    // Tên ở phần hero
+    guestElement.innerHTML = guest.name;
+
+
+    // Tên ở cuối thiệp
+    const signature = document.getElementById("signatureName");
+
+    if (signature) {
+        signature.innerHTML = guest.name;
+    }
+
     }
 
 });
