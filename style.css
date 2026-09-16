@@ -178,17 +178,13 @@ h2 {
 
 
 
-    background:
-
+     background:
 
     linear-gradient(
-
         135deg,
-
-        rgba(181,18,27,0.98),
-
-        rgba(17,17,17,0.98)
-
+        #b5121b 0%,
+        #d42b36 45%,
+        #4a1115 100%
     );
 
 
