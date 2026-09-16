@@ -1,5 +1,25 @@
 // Đổi thời gian bên dưới thành thời gian thật của lễ tốt nghiệp.
 const graduationDate = new Date("2026-09-20T09:00:00+07:00").getTime();
+const guestElement = document.getElementById("guestName");
+
+const params = new URLSearchParams(window.location.search);
+
+const guestID = params.get("guest");
+
+
+fetch("guests.json")
+.then(response => response.json())
+.then(data => {
+
+    const guest = data.find(
+        item => item.id === guestID
+    );
+
+    if (guest) {
+        guestElement.innerHTML = guest.name;
+    }
+
+});
 
 function updateCountdown() {
   const now = Date.now();
