@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <meta name="description" content="Thiệp mời tham dự lễ tốt nghiệp HUST" />
+  <meta name="theme-color" content="#b5121b" />
+
+  <!-- Hiển thị đẹp khi dán link vào Messenger / Zalo -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Thiệp mời lễ tốt nghiệp - HUST" />
+  <meta property="og:description" content="Chủ Nhật, 27/09/2026 - 15:30, Hội trường C2, Đại học Bách khoa Hà Nội" />
+
+  <title>HUST Graduation Day</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Oswald:wght@500;600;700&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="style-new.css" />
+
+</head>
+
+
+<body>
+
+<canvas class="confetti" id="confetti" aria-hidden="true"></canvas>
+
+
+<main>
+
+
+<!-- ================= HERO ================= -->
+
+<section class="hero section">
+
+
+    <div class="badge">
+        HUST • GRADUATION DAY
+    </div>
+
+
+    <p class="eyebrow">
+        Trân trọng kính mời
+    </p>
+
+
+    <!-- Tên khách sẽ được thay bằng javascript -->
+
+    <h1 id="guestName">
+        Quý khách
+    </h1>
+
+
+    <p class="subtitle">
+        đến chung vui trong ngày lễ tốt nghiệp của mình
+    </p>
+
+
+
+    <div class="cap">
+        🎓
+    </div>
+
+
+
+    <p class="quote">
+        "Từ Bách khoa, bước ra hành trình mới."
+    </p>
+
+
+
+    <a class="btn primary" href="#details">
+        Xem thông tin buổi lễ
+    </a>
+
+
+    <span class="scroll-hint">
+        ↓
+    </span>
+
+
+</section>
+
+
+
+
+
+<!-- ================= DETAILS ================= -->
+
+
+<section id="details" class="section details">
+
+
+<div class="card reveal">
+
+
+<p class="eyebrow">
+    SAVE THE DATE
+</p>
+
+
+<h2>
+    Hẹn gặp bạn tại lễ tốt nghiệp
+</h2>
+
+
+
+<div class="info-grid">
+
+
+
+<div class="info-item">
+
+<span class="icon">
+📅
+</span>
+
+<div>
+
+<strong>
+Ngày
+</strong>
+
+<p id="eventDate">
+Chủ Nhật, 27/09/2026
+</p>
+
+</div>
+
+</div>
+
+
+
+
+
+<div class="info-item">
+
+<span class="icon">
+🕘
+</span>
+
+
+<div>
+
+<strong>
+Thời gian
+</strong>
+
+<p id="eventTime">
+15:30
+</p>
+
+</div>
+
+</div>
+
+
+
+
+
+<div class="info-item">
+
+<span class="icon">
+📍
+</span>
+
+
+<div>
+
+<strong>
+Địa điểm
+</strong>
+
+
+<p>
+Hội trường C2
+<br>
+Đại học Bách khoa Hà Nội
+</p>
+
+
+</div>
+
+</div>
+
+
+
+
+
+<div class="info-item">
+
+<span class="icon">
+📞
+</span>
+
+
+<div>
+
+<strong>
+Liên hệ
+</strong>
+
+
+<p>
+<a href="tel:0966241356">0966 241 356</a>
+</p>
+
+
+</div>
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+<div class="actions">
+
+
+<a 
+class="btn secondary"
+href="https://www.google.com/maps/search/?api=1&query=H%E1%BB%99i%20tr%C6%B0%E1%BB%9Dng%20C2%20%C4%90%E1%BA%A1i%20h%E1%BB%8Dc%20B%C3%A1ch%20khoa%20H%C3%A0%20N%E1%BB%99i"
+target="_blank"
+rel="noreferrer">
+
+Mở Google Maps
+
+</a>
+
+
+
+
+</div>
+
+
+
+
+
+<!-- Bản đồ khuôn viên trường -->
+
+<figure class="campus-map" id="campusMap">
+
+
+<img
+  id="campusMapImg"
+  src="ban-do-hust.jpg"
+  alt="Bản đồ khuôn viên Đại học Bách khoa Hà Nội, toà C2 nằm phía đường Giải Phóng"
+  width="904"
+  height="556"
+  loading="lazy" />
+
+
+<figcaption>
+
+Toà <strong>C2</strong> nằm phía đường Giải Phóng, gần cổng Parabol.
+
+</figcaption>
+
+
+</figure>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+<!-- ================= COUNTDOWN ================= -->
+
+
+<section class="section countdown-section">
+
+
+<p class="eyebrow">
+COUNTDOWN
+</p>
+
+
+
+<h2>
+Còn lại
+</h2>
+
+
+
+
+<div id="countdown" class="countdown reveal">
+
+
+<div>
+
+<span id="days">
+00
+</span>
+
+<small>
+Ngày
+</small>
+
+</div>
+
+
+
+<div>
+
+<span id="hours">
+00
+</span>
+
+<small>
+Giờ
+</small>
+
+</div>
+
+
+
+<div>
+
+<span id="minutes">
+00
+</span>
+
+<small>
+Phút
+</small>
+
+</div>
+
+
+
+
+<div>
+
+<span id="seconds">
+00
+</span>
+
+<small>
+Giây
+</small>
+
+</div>
+
+
+
+</div>
+
+
+
+</section>
+
+
+
+
+
+
+
+<!-- ================= MESSAGE ================= -->
+
+
+<section class="section message-section">
+
+
+<div class="message-card reveal">
+
+
+<p class="eyebrow">
+A LITTLE NOTE
+</p>
+
+
+
+<h2>
+Sự hiện diện của bạn là món quà thật ý nghĩa
+</h2>
+
+
+
+<p>
+
+Mình rất vui khi được gửi lời mời đến bạn
+trong ngày lễ tốt nghiệp - một dấu mốc quan trọng
+sau hành trình học tập tại Đại học Bách khoa Hà Nội.
+
+Rất mong được gặp bạn,
+cùng lưu giữ những khoảnh khắc đáng nhớ trong ngày đặc biệt này.
+
+</p>
+
+
+
+
+<div class="signature-row">
+
+
+<div class="signature" id="signatureName">
+Nguyễn Hoài Thương
+</div>
+
+
+<button class="btn primary" id="rsvpYes" type="button">
+Xác nhận tham dự
+</button>
+
+
+</div>
+
+
+<p class="rsvp-status" id="rsvpStatus" role="status" aria-live="polite"></p>
+
+
+<p class="rsvp-hint" id="rsvpHint"></p>
+
+
+
+</div>
+
+
+</section>
+
+
+
+</main>
+
+
+
+
+
+
+<footer>
+
+HUST • CLASS OF 2026
+
+</footer>
+
+
+
+
+<script src="script-new.js"></script>
+
+
+</body>
+
+
+</html>

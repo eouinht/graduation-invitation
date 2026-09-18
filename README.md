@@ -1,31 +1,52 @@
-# Graduation Invitation Website
+# Thiệp mời lễ tốt nghiệp - HUST
 
-Website thiệp mời lễ tốt nghiệp dạng static, phù hợp deploy miễn phí bằng GitHub Pages.
+Website thiệp mời dạng static, deploy miễn phí bằng GitHub Pages.
 
-## Các file
-- `index.html`: nội dung trang
-- `style.css`: giao diện
-- `script.js`: countdown
+Repo chứa **hai bản**, dùng chung một thư mục nhưng hoàn toàn độc lập:
 
-## Cần sửa trước khi deploy
-Trong `index.html`:
-- Tên `Nguyễn Văn A`
-- Ngày, giờ lễ tốt nghiệp
-- Địa điểm
-- Link Google Maps
-- Link Google Form RSVP
+| Bản | File | Mô tả |
+|---|---|---|
+| Ổn định | `index.html`, `style.css`, `script.js`, `guests.json` | Bản gốc đã sửa hết lỗi, không có hiệu ứng |
+| New | `index-new.html`, `style-new.css`, `script-new.js`, `guests-new.json` | Bản đang dùng: hiệu ứng, bản đồ, nút xác nhận |
 
-Trong `script.js`:
-- Đổi `graduationDate` thành ngày giờ thật, ví dụ:
-  `new Date("2026-09-20T09:00:00+07:00")`
+Sửa bản này không ảnh hưởng bản kia.
+
+## Cần sửa trước khi gửi thiệp
+
+Trong `script-new.js` (khối cấu hình ở đầu file):
+- `GRADUATION_DATE_ISO` - ngày giờ lễ. Script tự điền luôn phần Ngày / Thời gian trong trang, không phải sửa chỗ nào khác.
+- `HOST_NAME` - tên người mời, hiện ở phần ký tên.
+- `RSVP_PHONE` - số điện thoại dự phòng khi gửi xác nhận lỗi.
+- `RSVP_ENDPOINT` - link Google Apps Script, xem `HUONG-DAN-RSVP.md`. Để trống thì nút xác nhận chuyển sang mở tin nhắn.
+
+Trong `index-new.html`:
+- Kiểm tra link nút "Mở Google Maps" có dẫn đúng chỗ không.
+- Địa chỉ và số điện thoại ở mục Liên hệ.
+
+Trong `guests-new.json`:
+- Danh sách khách. `id` viết thường, không dấu, không khoảng trắng.
+
+## Gửi thiệp riêng cho từng người
+
+Thêm `?guest=` kèm `id` vào cuối link:
+
+```
+https://USERNAME.github.io/graduation-invitation/index-new.html?guest=quyen
+```
+
+Không có hoặc sai `?guest=` thì thiệp hiện lời chào chung "Quý khách".
 
 ## Deploy bằng GitHub Pages
-1. Tạo repository mới, ví dụ `graduation-invitation`.
-2. Upload 4 file này lên repository.
-3. Vào `Settings > Pages`.
-4. Ở phần Build and deployment, chọn `Deploy from a branch`.
-5. Chọn branch `main` và thư mục `/ (root)` rồi Save.
-6. Sau khi Pages bật, link thường có dạng:
-   `https://USERNAME.github.io/graduation-invitation/`
 
-# graduation-invitation
+1. Tạo repository mới, ví dụ `graduation-invitation`.
+2. Upload toàn bộ file lên repository, gồm cả `ban-do-hust.jpg`.
+3. Vào `Settings > Pages`.
+4. Build and deployment: chọn `Deploy from a branch`.
+5. Chọn branch `main`, thư mục `/ (root)`, rồi Save.
+
+Muốn bản new thành trang chính thì đổi tên `index-new.html` thành `index.html` (nhớ sao lưu bản cũ trước), và sửa lại các dòng `href`/`src` bên trong cho khớp.
+
+## Lưu ý
+
+- GitHub Pages phân biệt hoa thường trong tên file. Sai một chữ là ảnh hoặc CSS không hiện.
+- `Code.gs` không cần upload lên repo, nó dùng cho Google Apps Script.
