@@ -133,5 +133,11 @@
     "id": "duong",
     "name": "Trần Hoài Dương",
     "relationship": "Bạn thân"
-  }
+  },
+  
+  {
+    "id": "phuong",
+    "name": "Trần Nguyên Phương",
+    "relationship": "Bạn đại học"
+  },
 ]
