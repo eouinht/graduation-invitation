@@ -420,6 +420,95 @@ h3 {
 
 
 }
+.thank-container {
+
+    max-width:1000px;
+
+    margin:auto;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:60px;
+
+}
+
+
+.thank-content {
+
+    flex:1;
+
+}
+
+
+.thank-content h2 {
+
+    font-size:45px;
+
+    line-height:1.2;
+
+}
+
+
+.thank-content p {
+
+    font-size:18px;
+
+    line-height:1.8;
+
+    color:#444;
+
+}
+
+
+.thank-image {
+
+    flex:0 0 380px;
+
+}
+
+
+.thank-image img {
+
+    width:100%;
+
+    border-radius:25px;
+
+    box-shadow:
+    0 20px 40px rgba(0,0,0,.15);
+
+}
+
+
+.closing {
+
+    margin-top:15px;
+
+    letter-spacing:3px;
+
+    color:#b5121b;
+
+    font-weight:700;
+
+}
+
+
+@media(max-width:768px){
+
+    .thank-container{
+
+        flex-direction:column;
+
+    }
+
+    .thank-image{
+
+        width:100%;
+
+    }
+
+}
 
 
 
