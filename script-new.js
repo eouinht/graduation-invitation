@@ -122,7 +122,7 @@ if (signatureElement) {
 
 const params = new URLSearchParams(window.location.search);
 const guestID = (params.get("guest") || "").trim().toLowerCase();
-
+console.log("Guest ID:", guestID);
 fetch("guests-new.json")
   .then(response => {
     if (!response.ok) {
@@ -134,7 +134,7 @@ fetch("guests-new.json")
     const guest = data.find(
       item => String(item.id).toLowerCase() === guestID
     );
-
+console.log("Guest data:", data);
     if (guest) {
       guestElement.textContent = guest.name;
       currentGuest = guest;
