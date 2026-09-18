@@ -41,361 +41,380 @@ h3 {
 }
 
 
-/* ===== HERO ===== */
+
+/* =========================
+        HERO
+========================= */
+
 
 .hero {
 
-    min-height: 100vh;
+    min-height:100vh;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    display:flex;
 
-    text-align: center;
+    flex-direction:column;
 
-    padding: 50px 20px;
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    padding:50px 20px;
+
 
     background:
-        radial-gradient(
-            circle at top,
-            rgba(212,175,55,0.2),
-            transparent 40%
-        ),
-        linear-gradient(
-            135deg,
-            #ffffff,
-            var(--cream)
-        );
+
+    radial-gradient(
+        circle at top,
+        rgba(212,175,55,0.2),
+        transparent 40%
+    ),
+
+    linear-gradient(
+        135deg,
+        #ffffff,
+        var(--cream)
+    );
 
 }
+
 
 
 .hust-badge {
 
-    padding: 12px 30px;
+    padding:12px 30px;
 
-    border: 2px solid var(--hust-red);
+    border:2px solid var(--hust-red);
 
-    color: var(--hust-red);
+    color:var(--hust-red);
 
-    font-weight: 700;
+    font-weight:700;
 
-    letter-spacing: 3px;
+    letter-spacing:3px;
 
-    margin-bottom: 35px;
+    margin-bottom:35px;
 
 }
 
 
-/* ===== IMAGE ANHNHT ===== */
+
+/* ẢNH ANHNHT */
 
 
 .profile-frame {
 
-    width: 280px;
+    width:280px;
 
-    height: 360px;
+    height:360px;
 
-    border-radius: 140px 140px 30px 30px;
+    border-radius:
 
-    overflow: hidden;
+    140px 140px 30px 30px;
 
-    border: 6px solid var(--gold);
+    overflow:hidden;
 
-    background: white;
+    border:6px solid var(--gold);
+
+    background:white;
+
 
     box-shadow:
-        0 20px 45px rgba(0,0,0,0.18);
+
+    0 20px 45px rgba(0,0,0,.18);
 
 }
+
 
 
 .profile-frame img {
 
-    width: 100%;
+    width:100%;
 
-    height: 100%;
+    height:100%;
 
-    object-fit: cover;
+    object-fit:cover;
 
-    object-position: center top;
+    object-position:center top;
 
 }
 
 
 
-/* ===== TEXT HERO ===== */
+/* TEXT HERO */
 
 
 .eyebrow {
 
-    color: var(--hust-red);
+    color:var(--hust-red);
 
-    font-weight: 700;
+    font-weight:700;
 
-    letter-spacing: 4px;
+    letter-spacing:4px;
 
-    margin-top: 35px;
+    margin-top:35px;
 
 }
+
 
 
 .hero h1 {
 
-    font-size: 70px;
+    font-size:70px;
 
-    margin: 15px 0;
+    margin:15px 0;
 
 }
+
 
 
 .subtitle {
 
-    font-size: 20px;
+    font-size:20px;
 
-    color: #555;
+    color:#555;
 
 }
+
 
 
 .cap {
 
-    font-size: 60px;
+    font-size:60px;
 
-    margin: 25px;
+    margin:25px;
 
 }
+
 
 
 .quote {
 
-    font-style: italic;
+    font-style:italic;
 
-    color: var(--hust-red);
+    color:var(--hust-red);
 
-    font-weight: 600;
+    font-weight:600;
 
 }
 
 
 
-/* ===== BUTTON ===== */
+
+/* =========================
+        BUTTON
+========================= */
 
 
 .btn {
 
-    display: inline-block;
+    display:inline-block;
 
-    padding: 15px 35px;
+    padding:15px 35px;
 
-    border-radius: 30px;
+    border-radius:30px;
 
-    text-decoration: none;
+    text-decoration:none;
 
-    font-weight: 700;
+    font-weight:700;
 
-    margin: 15px;
+    margin:15px;
 
 }
+
 
 
 .btn.primary {
 
-    background:
-        linear-gradient(
-            135deg,
-            #f5d76e,
-            var(--gold)
-        );
 
-    color: #111;
+    background:
+
+    linear-gradient(
+        135deg,
+        #f5d76e,
+        var(--gold)
+    );
+
+
+    color:#111;
 
 }
+
 
 
 .btn.secondary {
 
-    border: 2px solid var(--hust-red);
+    border:2px solid var(--hust-red);
 
-    color: var(--hust-red);
+    color:var(--hust-red);
 
 }
 
 
 
-/* ===== DATE / INFO GIỮ KIỂU CŨ ===== */
+
+
+/* =========================
+        DETAILS
+========================= */
 
 
 .card {
 
-    max-width: 950px;
 
-    margin: auto;
+    max-width:950px;
 
-    background: white;
+    margin:auto;
 
-    padding: 45px;
+    background:white;
+
+    padding:45px;
+
 
     border-top:
 
-        8px solid var(--hust-red);
+    8px solid var(--hust-red);
+
 
 
     box-shadow:
 
-        0 20px 50px rgba(0,0,0,.12);
+    0 20px 50px rgba(0,0,0,.12);
+
 
 }
+
 
 
 .info-grid {
 
 
-    display: grid;
+    display:grid;
 
 
     grid-template-columns:
+
     repeat(3,1fr);
 
 
-    gap: 30px;
+    gap:30px;
 
 
-    margin-top: 35px;
+    margin-top:35px;
+
 
 }
+
 
 
 .info-grid div {
 
-    padding: 25px;
 
-    border-radius: 15px;
-
-    background: #fafafa;
-
-}
+    padding:25px;
 
 
-.info-grid strong {
-
-    color: var(--hust-red);
-
-}
+    border-radius:15px;
 
 
-
-/* ===== HÀNH TRÌNH BÁCH KHOA ===== */
-
-
-.memory {
-
-    background: #fafafa;
-
-}
-
-
-
-.memory-container {
-
-
-    max-width: 1000px;
-
-    margin: auto;
-
-
-    display: flex;
-
-
-    align-items: center;
-
-
-    gap: 50px;
-
-}
-
-
-
-.memory-text {
-
-
-    flex: 1;
-
-
-    font-size: 18px;
-
-
-    line-height: 1.8;
+    background:#fafafa;
 
 
 }
 
 
 
-.memory-image-box {
 
 
-    flex: 0 0 380px;
+/* =========================
+        THANK YOU SECTION
+========================= */
+
+
+.thank-container {
+
+
+    max-width:1000px;
+
+
+    margin:auto;
+
+
+    display:flex;
+
+
+    align-items:center;
+
+
+    gap:60px;
 
 
 }
 
 
 
-.memory-image-box img {
+.thank-content {
 
 
-    width: 100%;
+    flex:1;
 
 
-    border-radius: 20px;
+}
+
+
+
+.thank-content h2 {
+
+
+    font-size:45px;
+
+
+    line-height:1.2;
+
+
+}
+
+
+
+.thank-content p {
+
+
+    font-size:18px;
+
+
+    line-height:1.8;
+
+
+    color:#444;
+
+
+}
+
+
+
+.thank-image {
+
+
+    flex:0 0 380px;
+
+
+}
+
+
+
+.thank-image img {
+
+
+    width:100%;
+
+
+    border-radius:25px;
 
 
     box-shadow:
 
-        0 15px 40px rgba(0,0,0,.18);
 
-
-}
-
-
-
-/* ===== MESSAGE ===== */
-
-
-.message-card {
-
-
-    max-width: 850px;
-
-
-    margin: auto;
-
-
-    padding: 50px;
-
-
-    color: white;
-
-
-    background:
-
-
-        linear-gradient(
-
-            135deg,
-
-            var(--hust-red),
-
-            #7d1017
-
-        );
-
-
-    border-left:
-
-        8px solid var(--gold);
+    0 20px 40px rgba(0,0,0,.15);
 
 
 }
@@ -405,114 +424,48 @@ h3 {
 .signature {
 
 
-    margin-top: 30px;
+    margin-top:30px;
 
 
     font-family:
 
-        "Cormorant Garamond", serif;
+    "Cormorant Garamond", serif;
 
 
-    font-size: 40px;
+    font-size:40px;
 
 
-    color: var(--gold);
+    color:var(--hust-red);
 
 
 }
-.thank-container {
 
-    max-width:1000px;
-
-    margin:auto;
-
-    display:flex;
-
-    align-items:center;
-
-    gap:60px;
-
-}
-
-
-.thank-content {
-
-    flex:1;
-
-}
-
-
-.thank-content h2 {
-
-    font-size:45px;
-
-    line-height:1.2;
-
-}
-
-
-.thank-content p {
-
-    font-size:18px;
-
-    line-height:1.8;
-
-    color:#444;
-
-}
-
-
-.thank-image {
-
-    flex:0 0 380px;
-
-}
-
-
-.thank-image img {
-
-    width:100%;
-
-    border-radius:25px;
-
-    box-shadow:
-    0 20px 40px rgba(0,0,0,.15);
-
-}
 
 
 .closing {
 
+
     margin-top:15px;
+
 
     letter-spacing:3px;
 
-    color:#b5121b;
+
+    color:var(--hust-red);
+
 
     font-weight:700;
 
-}
-
-
-@media(max-width:768px){
-
-    .thank-container{
-
-        flex-direction:column;
-
-    }
-
-    .thank-image{
-
-        width:100%;
-
-    }
 
 }
 
 
 
-/* ===== FOOTER ===== */
+
+
+/* =========================
+        FOOTER
+========================= */
 
 
 footer {
@@ -534,7 +487,11 @@ footer {
 
 
 
-/* ===== MOBILE ===== */
+
+
+/* =========================
+        MOBILE
+========================= */
 
 
 @media(max-width:768px){
@@ -570,16 +527,17 @@ footer {
 
 
 
-    .memory-container {
+    .thank-container {
 
 
         flex-direction:column;
+
 
     }
 
 
 
-    .memory-image-box {
+    .thank-image {
 
 
         width:100%;
