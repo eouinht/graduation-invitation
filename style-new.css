@@ -386,23 +386,32 @@ h3 {
 ========================= */
 
 
+/* =========================
+        THANK YOU SECTION
+========================= */
+
+
+.thank-section {
+
+    background:#fffdf9;
+
+}
+
+
+
 .thank-container {
 
-
-    max-width:1000px;
-
+    max-width:1100px;
 
     margin:auto;
 
-
     display:flex;
-
 
     align-items:center;
 
+    justify-content:space-between;
 
-    gap:60px;
-
+    gap:80px;
 
 }
 
@@ -410,8 +419,31 @@ h3 {
 
 .thank-content {
 
-
     flex:1;
+
+}
+
+
+
+.thank-content .eyebrow {
+
+
+    font-family:"Montserrat",sans-serif;
+
+
+    font-size:16px;
+
+
+    letter-spacing:5px;
+
+
+    font-weight:500;
+
+
+    color:#b5121b;
+
+
+    margin-bottom:35px;
 
 
 }
@@ -421,10 +453,25 @@ h3 {
 .thank-content h2 {
 
 
-    font-size:45px;
+    font-family:"Cormorant Garamond",serif;
 
 
-    line-height:1.2;
+    font-size:58px;
+
+
+    line-height:1.15;
+
+
+    font-weight:400;
+
+
+    letter-spacing:0.5px;
+
+
+    color:#171717;
+
+
+    margin-bottom:35px;
 
 
 }
@@ -434,23 +481,83 @@ h3 {
 .thank-content p {
 
 
-    font-size:18px;
+    font-family:"Montserrat",sans-serif;
 
 
-    line-height:1.8;
+    font-size:17px;
 
 
-    color:#444;
+    font-weight:300;
+
+
+    line-height:2;
+
+
+    color:#555;
+
+
+    max-width:600px;
+
+
+    margin-bottom:20px;
 
 
 }
 
 
 
+.signature {
+
+
+    margin-top:45px;
+
+
+    font-family:"Great Vibes",cursive;
+
+
+    font-size:65px;
+
+
+    font-weight:400;
+
+
+    color:#b5121b;
+
+
+}
+
+
+
+.closing {
+
+
+    margin-top:25px;
+
+
+    font-family:"Montserrat",sans-serif;
+
+
+    font-size:14px;
+
+
+    letter-spacing:6px;
+
+
+    font-weight:400;
+
+
+    color:#555;
+
+
+}
+
+
+
+
 .thank-image {
 
 
-    flex:0 0 380px;
+    flex:0 0 400px;
 
 
 }
@@ -468,48 +575,7 @@ h3 {
 
     box-shadow:
 
-
-    0 20px 40px rgba(0,0,0,.15);
-
-
-}
-
-
-
-.signature {
-
-
-    margin-top:30px;
-
-
-    font-family:
-
-    "Cormorant Garamond", serif;
-
-
-    font-size:40px;
-
-
-    color:var(--hust-red);
-
-
-}
-
-
-
-.closing {
-
-
-    margin-top:15px;
-
-
-    letter-spacing:3px;
-
-
-    color:var(--hust-red);
-
-
-    font-weight:700;
+    0 25px 50px rgba(0,0,0,.15);
 
 
 }
