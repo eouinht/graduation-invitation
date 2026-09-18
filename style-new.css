@@ -252,6 +252,54 @@ h3 {
 }
 
 
+/* =========================
+        ACTION BUTTONS
+========================= */
+
+
+.actions {
+
+    margin-top:35px;
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:20px;
+
+}
+
+
+
+.actions .btn {
+
+    margin:10px;
+
+}
+
+
+
+.btn.secondary {
+
+    border:2px solid var(--hust-red);
+
+    color:var(--hust-red);
+
+    background:white;
+
+    transition:0.3s;
+
+}
+
+
+
+.btn.secondary:hover {
+
+    background:var(--hust-red);
+
+    color:white;
+
+}
 
 
 
