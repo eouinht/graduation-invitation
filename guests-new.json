@@ -123,5 +123,15 @@
     "id": "duy",
     "name": "Nguyễn Đăng Duy",
     "relationship": "Bạn thân"
+  },
+  {
+    "id": "my",
+    "name": "Phan Trà My",
+    "relationship": "Bạn thân"
+  },
+  {
+    "id": "duong",
+    "name": "Trần Hoài Dương",
+    "relationship": "Bạn thân"
   }
 ]
