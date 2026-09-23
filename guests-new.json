@@ -139,5 +139,18 @@
     "id": "phuong",
     "name": "Trần Nguyên Phương",
     "relationship": "Bạn đại học"
+  },
+  
+  {
+    "id": "nhaminh",
+    "name": "Gia đình ông bà Tiến Khuyến" ,
+    "relationship": "gia đình"
+  },
+  
+  {
+    "id": "dongnghiep",
+    "name": "Anh chị đồng nghiệp phòng Phần Mềm Giao Thức",
+    "relationship": "đồng nghiệp"
   }
+  
 ]
